@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./../lib/favicon.png" type="image/x-icon">
+    <link rel="preload" href="./../lib/fonts/fontawesome.woff2?14663396" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./../lib/fonts/source-code-pro-v14-latin-regular.woff2" as="font" type="font/woff2"
+        crossorigin>
+    <link rel="preload" href="./../lib/fonts/roboto-mono-v13-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./../lib/fonts/source-sans-pro-v14-latin-700.woff2" as="font" type="font/woff2"
+        crossorigin>
+    <link rel="preload" href="./../lib/fonts/source-sans-pro-v14-latin-600.woff2" as="font" type="font/woff2"
+        crossorigin>
+    <link rel="preload" href="./../lib/fonts/freckle-face-v9-latin-regular.woff2" as="font" type="font/woff2"
+        crossorigin>
+    <link rel="stylesheet" href="./../lib/w3schools31.css">
+    <link rel="stylesheet" href="./../lib/style.css">
+    <title>Python Tutorial</title>
+
+</head>
+
+<body>
+
+    <div style='display:none;position:absolute;z-index:6;top:122px;right:0;height:75px;padding-right:20px;padding-left:20px;padding-top:5px;'
+        id='googleSearch'>
+        <div class='gcse-search'></div>
+    </div>
+
+    <div class='w3-card-2 topnav notranslate' id='topnav'>
+        <div style="overflow:auto;">
+            <div class="w3-bar w3-left" style="width:100%;overflow:hidden;height:44px">
+                <a href='javascript:void(0);'
+                    class='topnav-icons fa fa-menu w3-hide-large w3-left w3-bar-item w3-button' onclick='open_menu()'
+                    title='Menu'></a>
+                <a href='./../index.html' class='topnav-icons fa fa-home w3-left w3-bar-item w3-button'
+                    title='Home'></a>
+                <a class="w3-bar-item w3-button active" href='./default.html' title='HTML Tutorial'
+                    style="padding-left:18px!important;padding-right:18px!important;">Python</a>
+
+                <a href="javascript:void(0);" class="topnav-icons fa w3-right w3-bar-item w3-button"
+                    onmouseover="mouseoverdarkicon()" onmouseout="mouseoutofdarkicon()"
+                    onclick="changepagetheme(2)"></a>
+                <div id="darkmodemenu" class="ws-black" onmouseover="mouseoverdarkicon()"
+                    onmouseout="mouseoutofdarkicon()">
+                    <input id="radio_darkpage" type="checkbox" name="radio_theme_mode" onclick="click_darkpage()"><label
+                        for="radio_darkpage"></label>
+                    <br>
+                    <input id="radio_darkcode" type="checkbox" name="radio_theme_mode" onclick="click_darkcode()"><label
+                        for="radio_darkcode"></label>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class='w3-sidebar w3-collapse' id='sidenav'>
+        <div id='leftmenuinner'>
+            <div id='leftmenuinnerinner'>
+                <h2 class="left"><span class="left_h2">Python</span> Tutorial</h2>
+                <a href="./default.html">Python HOME</a>
+                <a href="python_intro.html" class="active">Python Intro</a>
+                <a href="python_getstarted.asp">Python Get Started</a>
+                <a href="python_syntax.asp">Python Syntax</a>
+                <a href="python_comments.asp">Python Comments</a>
+                <a href="python_variables.asp">Python Variables</a>
+                <a href="python_datatypes.asp">Python Data Types</a>
+                <a href="python_numbers.asp">Python Numbers</a>
+                <a href="python_casting.asp">Python Casting</a>
+                <a href="python_strings.asp">Python Strings</a>
+                <a href="python_booleans.asp">Python Booleans</a>
+                <a href="python_operators.asp">Python Operators</a>
+                <a href="python_lists.asp">Python Lists</a>
+                <a href="python_tuples.asp">Python Tuples</a>
+                <a href="python_sets.asp">Python Sets</a>
+                <a href="python_dictionaries.asp">Python Dictionaries</a>
+                <a href="python_conditions.asp">Python If...Else</a>
+                <a href="python_while_loops.asp">Python While Loops</a>
+                <a href="python_for_loops.asp">Python For Loops</a>
+                <a href="python_functions.asp">Python Functions</a>
+                <a href="python_lambda.asp">Python Lambda</a>
+                <a href="python_arrays.asp">Python Arrays</a>
+                <a href="python_classes.asp">Python Classes/Objects</a>
+                <a href="python_inheritance.asp">Python Inheritance</a>
+                <a href="python_iterators.asp">Python Iterators</a>
+                <a href="python_scope.asp">Python Scope</a>
+                <a href="python_modules.asp">Python Modules</a>
+                <a href="python_datetime.asp">Python Dates</a>
+                <a href="python_math.asp">Python Math</a>
+                <a href="python_json.asp">Python JSON</a>
+                <a href="python_regex.asp">Python RegEx</a>
+                <a href="python_pip.asp">Python PIP</a>
+                <a href="python_try_except.asp">Python Try...Except</a>
+                <a href="python_user_input.asp">Python User Input</a>
+                <a href="python_string_formatting.asp">Python String Formatting</a>
+                <br>
+                <h2 class="left">File Handling</h2>
+                <a href="python_file_handling.asp">Python File Handling</a>
+                <a href="python_file_open.asp">Python Read Files</a>
+                <a href="python_file_write.asp">Python Write/Create Files</a>
+                <a href="python_file_remove.asp">Python Delete Files</a>
+                <br><br>
+            </div>
+        </div>
+    </div>
+
+    <div class='w3-main w3-light-grey w3-margin-right' id='belowtopnav' style='margin-left:250px;'>
+        <div class='w3-row w3-white'>
+            <div class='w3-col l12 m10' id='main' style="margin-top: 40px;">
+
+                <h1>Python <span class="color_h1">Introduction</span></h1>
+                <br><br>
+                <div class="w3-clear nextprev">
+                    <a class="w3-left w3-btn" href="default.asp">&#10094; Previous</a>
+                    <a class="w3-right w3-btn w3-margin-right" href="python_getstarted.asp">Next &#10095;</a>
+                </div>
+                <hr>
+
+                <h2>What is Python?</h2>
+                <p>Python is a popular programming language. It was created by Guido van Rossum,
+                    and released in 1991.</p>
+
+                <p>It is used for:</p>
+
+                <ul>
+                    <li>web development (server-side), </li>
+                    <li>software development, </li>
+                    <li>mathematics,</li>
+                    <li>system scripting.</li>
+                </ul>
+
+                <h3>What can Python do?</h3>
+                <ul>
+                    <li>Python can be used on a server to create web applications.</li>
+                    <li>Python can be used alongside software to create workflows.</li>
+                    <li>Python can connect to database systems. It can also read and modify files.</li>
+                    <li>Python can be used to handle big data and perform complex mathematics.</li>
+                    <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+                </ul>
+
+                <h3>Why Python?</h3>
+                <ul>
+                    <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+                    <li>Python has a simple syntax similar to the English language.</li>
+                    <li>Python has syntax that allows developers to write programs with fewer lines than some other
+                        programming languages.</li>
+                    <li>Python runs on an interpreter system, meaning that code can be executed as soon as it is
+                        written. This means that prototyping can be very quick.</li>
+                    <li>Python can be treated in a procedural way, an object-oriented way or a functional way.</li>
+                </ul>
+
+                <h3>Good to know</h3>
+                <ul>
+                    <li>The most recent major version of Python is Python 3, which we shall be using in this tutorial.
+                        However, Python 2, although not being updated with anything other than security updates, is
+                        still quite popular.</li>
+                    <li>In this tutorial Python will be written in a text editor. It is possible to write Python in an
+                        Integrated Development Environment, such as Thonny, Pycharm, Netbeans or Eclipse which are
+                        particularly useful when managing larger collections of Python files.</li>
+                </ul>
+
+                <h3>Python Syntax compared to other programming languages</h3>
+                <ul>
+                    <li>Python was designed for readability, and has some similarities to the English language with
+                        influence from mathematics.</li>
+                    <li>Python uses new lines to complete a command, as opposed to other programming languages which
+                        often use semicolons or parentheses.</li>
+                    <li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops,
+                        functions and classes. Other programming languages often use curly-brackets for this purpose.
+                    </li>
+                </ul>
+
+                <div class="w3-example w3-margin-right">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate pythonHigh">
+                        print("Hello, World!")
+                    </div>
+                </div>
+                <hr>
+                
+                <div class="w3-clear nextprev">
+                    <a class="w3-left w3-btn" href="./../index.html">&#10094; Home</a>
+                    <a class="w3-right w3-btn w3-margin-right" href="#">Next &#10095;</a>
+                </div>
+
+                <div id="mypagediv2" style="position:relative;text-align:center;"></div>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.snigelweb.com/adengine/w3schools.com/loader.js"></script>
+    <script src="./../lib/script.js"></script>
+    <script src="./../lib/uic.js?v=1.0.5"></script>
+
+</body>
+
+</html>

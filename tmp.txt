@@ -1,0 +1,113 @@
+ <div class='w3-sidebar w3-collapse' id='sidenav'>
+        <div id='leftmenuinner'>
+            <div id='leftmenuinnerinner'>
+                <h2 class="left"><span class="left_h2">Python</span> Tutorial</h2>
+                <a href="./default.html" class="active">Python HOME</a>
+                <a href="python_intro.html">Python Intro</a>
+                <a href="python_getstarted.asp">Python Get Started</a>
+                <a href="python_syntax.asp">Python Syntax</a>
+                <a href="python_comments.asp">Python Comments</a>
+                <a href="python_variables.asp">Python Variables</a>
+                <div class="tut_overview">
+                    <a href="python_variables.asp">Python Variables</a>
+                    <a href="python_variables_names.asp">Variable Names</a>
+                    <a href="python_variables_multiple.asp">Assign Multiple Values</a>
+                    <a href="python_variables_output.asp">Output Variables</a>
+                    <a href="python_variables_global.asp">Global Variables</a>
+                    <a href="python_variables_exercises.asp">Variable Exercises</a>
+                </div>
+                <a href="python_datatypes.asp">Python Data Types</a>
+                <a href="python_numbers.asp">Python Numbers</a>
+                <a href="python_casting.asp">Python Casting</a>
+                <a href="python_strings.asp">Python Strings</a>
+                <div class="tut_overview">
+                    <a href="python_strings.asp">Python Strings</a>
+                    <a href="python_strings_slicing.asp">Slicing Strings</a>
+                    <a href="python_strings_modify.asp">Modify Strings</a>
+                    <a href="python_strings_concatenate.asp">Concatenate Strings</a>
+                    <a href="python_strings_format.asp">Format Strings</a>
+                    <a href="python_strings_escape.asp">Escape Characters</a>
+                    <a href="python_strings_methods.asp">String Methods</a>
+                    <a href="python_strings_exercises.asp">String Exercises</a>
+                </div>
+                <a href="python_booleans.asp">Python Booleans</a>
+                <a href="python_operators.asp">Python Operators</a>
+                <a href="python_lists.asp">Python Lists</a>
+                <div class="tut_overview">
+                    <a href="python_lists.asp">Python Lists</a>
+                    <a href="python_lists_access.asp">Access List Items</a>
+                    <a href="python_lists_change.asp">Change List Items</a>
+                    <a href="python_lists_add.asp">Add List Items</a>
+                    <a href="python_lists_remove.asp">Remove List Items</a>
+                    <a href="python_lists_loop.asp">Loop Lists</a>
+                    <a href="python_lists_comprehension.asp">List Comprehension</a>
+                    <a href="python_lists_sort.asp">Sort Lists</a>
+                    <a href="python_lists_copy.asp">Copy Lists</a>
+                    <a href="python_lists_join.asp">Join Lists</a>
+                    <a href="python_lists_methods.asp">List Methods</a>
+                    <a href="python_lists_exercises.asp">List Exercises</a>
+                </div>
+                <a href="python_tuples.asp">Python Tuples</a>
+                <div class="tut_overview">
+                    <a href="python_tuples.asp">Python Tuples</a>
+                    <a href="python_tuples_access.asp">Access Tuples</a>
+                    <a href="python_tuples_update.asp">Update Tuples</a>
+                    <a href="python_tuples_unpack.asp">Unpack Tuples</a>
+                    <a href="python_tuples_loop.asp">Loop Tuples</a>
+                    <a href="python_tuples_join.asp">Join Tuples</a>
+                    <a href="python_tuples_methods.asp">Tuple Methods</a>
+                    <a href="python_tuples_exercises.asp">Tuple Exercises</a>
+                </div>
+                <a href="python_sets.asp">Python Sets</a>
+                <div class="tut_overview">
+                    <a href="python_sets.asp">Python Sets</a>
+                    <a href="python_sets_access.asp">Access Set Items</a>
+                    <a href="python_sets_add.asp">Add Set Items</a>
+                    <a href="python_sets_remove.asp">Remove Set Items</a>
+                    <a href="python_sets_loop.asp">Loop Sets</a>
+                    <a href="python_sets_join.asp">Join Sets</a>
+                    <a href="python_sets_methods.asp">Set Methods</a>
+                    <a href="python_sets_exercises.asp">Set Exercises</a>
+                </div>
+                <a href="python_dictionaries.asp">Python Dictionaries</a>
+                <div class="tut_overview">
+                    <a href="python_dictionaries.asp">Python Dictionaries</a>
+                    <a href="python_dictionaries_access.asp">Access Items</a>
+                    <a href="python_dictionaries_change.asp">Change Items</a>
+                    <a href="python_dictionaries_add.asp">Add Items</a>
+                    <a href="python_dictionaries_remove.asp">Remove Items</a>
+                    <a href="python_dictionaries_loop.asp">Loop Dictionaries</a>
+                    <a href="python_dictionaries_copy.asp">Copy Dictionaries</a>
+                    <a href="python_dictionaries_nested.asp">Nested Dictionaries</a>
+                    <a href="python_dictionaries_methods.asp">Dictionary Methods</a>
+                    <a href="python_dictionaries_exercises.asp">Dictionary Exercise</a>
+                </div>
+                <a href="python_conditions.asp">Python If...Else</a>
+                <a href="python_while_loops.asp">Python While Loops</a>
+                <a href="python_for_loops.asp">Python For Loops</a>
+                <a href="python_functions.asp">Python Functions</a>
+                <a href="python_lambda.asp">Python Lambda</a>
+                <a href="python_arrays.asp">Python Arrays</a>
+                <a href="python_classes.asp">Python Classes/Objects</a>
+                <a href="python_inheritance.asp">Python Inheritance</a>
+                <a href="python_iterators.asp">Python Iterators</a>
+                <a href="python_scope.asp">Python Scope</a>
+                <a href="python_modules.asp">Python Modules</a>
+                <a href="python_datetime.asp">Python Dates</a>
+                <a href="python_math.asp">Python Math</a>
+                <a href="python_json.asp">Python JSON</a>
+                <a href="python_regex.asp">Python RegEx</a>
+                <a href="python_pip.asp">Python PIP</a>
+                <a href="python_try_except.asp">Python Try...Except</a>
+                <a href="python_user_input.asp">Python User Input</a>
+                <a href="python_string_formatting.asp">Python String Formatting</a>
+                <br>
+                <h2 class="left">File Handling</h2>
+                <a href="python_file_handling.asp">Python File Handling</a>
+                <a href="python_file_open.asp">Python Read Files</a>
+                <a href="python_file_write.asp">Python Write/Create Files</a>
+                <a href="python_file_remove.asp">Python Delete Files</a>
+                <br><br>
+            </div>
+        </div>
+    </div>
