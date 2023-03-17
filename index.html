@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<head>   
+<head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="./lib/favicon.png" type="image/x-icon">
-    <link rel="preload" href="./lib/fonts/fontawesome.woff2?14663396" as="font" type="font/woff2" crossorigin> 
-    <link rel="preload" href="./lib/fonts/source-code-pro-v14-latin-regular.woff2" as="font" type="font/woff2" crossorigin> 
-    <link rel="preload" href="./lib/fonts/roboto-mono-v13-latin-500.woff2" as="font" type="font/woff2" crossorigin> 
-    <link rel="preload" href="./lib/fonts/source-sans-pro-v14-latin-700.woff2" as="font" type="font/woff2" crossorigin> 
-    <link rel="preload" href="./lib/fonts/source-sans-pro-v14-latin-600.woff2" as="font" type="font/woff2" crossorigin> 
+    <link rel="preload" href="./lib/fonts/fontawesome.woff2?14663396" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./lib/fonts/source-code-pro-v14-latin-regular.woff2" as="font" type="font/woff2"
+        crossorigin>
+    <link rel="preload" href="./lib/fonts/roboto-mono-v13-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./lib/fonts/source-sans-pro-v14-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./lib/fonts/source-sans-pro-v14-latin-600.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./lib/fonts/freckle-face-v9-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="./lib/w3schools31.css">
     <link rel="stylesheet" href="./lib/style.css">
     <title>Full Stack Data Science</title>
+
 </head>
 
 <body style="position:relative;min-height:100%;font-family: 'Source Sans Pro', sans-serif;">
-    
+
     <div style='display:none;position:absolute;z-index:6;top:122px;right:0;height:75px;padding-right:20px;padding-left:20px;padding-top:5px;'
         id='googleSearch'>
         <div class='gcse-search'></div>
     </div>
-    
+
     <div style='display:none;position:absolute;z-index:5;top:122px;right:0;height:75px;padding-right:15px;text-align:right;padding-top:5px;'
         id='google_translate_element'>
     </div>
 
     <!-- MAIN -->
     <div class="w3-main" id="main">
-
         <div style="position:relative">
             <div class="w3-right ws-black ext_icon_container">
                 <a class="icons-right w3-bar-item w3-button bar-icon-hover w3-right"
@@ -67,24 +69,24 @@
         </svg>
 
         <script>
-                (
-                    function setThemeMode() {
-                        var x = localStorage.getItem("preferredmode");
-                        var y = localStorage.getItem("preferredpagemode");
-                        if (x == "dark") {
-                            document.body.className += " darktheme";
-                            document.getElementById("radio_darkcode").checked = true;
+            (
+                function setThemeMode() {
+                    var x = localStorage.getItem("preferredmode");
+                    var y = localStorage.getItem("preferredpagemode");
+                    if (x == "dark") {
+                        document.body.className += " darktheme";
+                        document.getElementById("radio_darkcode").checked = true;
 
-                        }
-                        if (y == "dark") {
-                            document.body.className += " darkpagetheme";
-                            document.getElementById("wavepath").style.fill = "rgb(13,23,33)";
-                            document.getElementById("radio_darkpage").checked = true;
+                    }
+                    if (y == "dark") {
+                        document.body.className += " darkpagetheme";
+                        document.getElementById("wavepath").style.fill = "rgb(13,23,33)";
+                        document.getElementById("radio_darkpage").checked = true;
 
-                        }
-                    })();
+                    }
+                })();
         </script>
-
+        <!-- Top 3 slide -->
         <div class="w3-row w3-padding-32 ws-light-green" style="margin-top:-10px;">
             <div class="w3-content" style="max-width:1400px">
 
@@ -157,11 +159,11 @@
                 </div>
             </div>
         </div>
+        <!-- Top 3 slide End -->
 
-        <div class="w3-row w3-padding-64 w3-light-grey">
+        <!-- Tools and languages -->
+        <div class="w3-row w3-padding-64 ws-grey">
 
-            <h2 class="w3-center" style="font-size:36px;font-weight:500">Mathematics and Tools</h2>
-            <hr>
             <div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;">
                 <a href="#" title="Statistics Tutorial">
                     <div class="w3-card-2 w3-round w3-pale-green" style="padding:24px;">
@@ -194,8 +196,42 @@
                 </a>
             </div>
 
-        </div>
+            <div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;">
+                <a href="#" title="C++ Tutorial">
+                    <div class="w3-card-2 w3-round w3-grey" style="padding:24px;">
+                        <h2 style="font-size:30px;font-weight:500">C++</h2>
+                    </div>
+                </a>
+            </div>
 
+            <div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;">
+                <a href="#" title="Javascript Tutorial">
+                    <div class="w3-card-2 w3-round w3-light-grey" style="padding:24px">
+                        <h2 style="font-size:30px;font-weight:500">Javascript</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;">
+                <a href="#" title="Excel & VBA Tutorial">
+                    <div class="w3-card-2 w3-round w3-sand" style="padding:24px">
+                        <h2 style="font-size:30px;font-weight:500">Django</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;">
+                <a href="#" title="Power BI Tutorial">
+                    <div class="w3-card-2 w3-round w3-light-blue" style="padding:24px">
+                        <h2 style="font-size:30px;font-weight:500">AWS</h2>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <!-- Tools and languages End -->
+
+        <!-- Python libraries -->
         <div class="w3-row w3-padding-64 ws-black">
             <h2 class="w3-center" style="font-size:36px;font-weight:500">Python Libraries</h2>
             <hr>
@@ -316,46 +352,13 @@
 
             </div>
         </div>
+        <!-- Python libraries End -->
 
-        <div class="w3-row w3-padding-64 ws-light-green">
-
-            <div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;">
-                <a href="#" title="C++ Tutorial">
-                    <div class="w3-card-2 w3-round w3-pale-blue" style="padding:24px;">
-                        <h2 style="font-size:30px;font-weight:500">C++</h2>
-                    </div>
-                </a>
-            </div>
-
-            <div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;">
-                <a href="#" title="Javascript Tutorial">
-                    <div class="w3-card-2 w3-round w3-light-grey" style="padding:24px">
-                        <h2 style="font-size:30px;font-weight:500">Javascript</h2>
-                    </div>
-                </a>
-            </div>
-
-            <div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;">
-                <a href="#" title="Excel & VBA Tutorial">
-                    <div class="w3-card-2 w3-round w3-pale-red" style="padding:24px">
-                        <h2 style="font-size:30px;font-weight:500">Django</h2>
-                    </div>
-                </a>
-            </div>
-
-            <div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;">
-                <a href="#" title="Power BI Tutorial">
-                    <div class="w3-card-2 w3-round w3-pale-yellow" style="padding:24px">
-                        <h2 style="font-size:30px;font-weight:500">AWS</h2>
-                    </div>
-                </a>
-            </div>
-
-        </div>
-
-        <footer class="w3-container w3-center w3-padding-32 ws-black">
-            <h3>Made in India by ❤️</h3>
+        <!-- Footer -->
+        <footer class="w3-container w3-center w3-padding-32 ws-grey">
+            <h3>Created and Managed By - <a href="https://github.com/prabhat-ai">Prabhat Gupta</a></h3>
         </footer>
+        <!-- Footer End -->
 
     </div>
     <!-- END MAIN -->
