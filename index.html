@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="lib/favicon.png" type="image/x-icon">
+    <link rel="preload" href="lib/fonts/fontawesome.woff2?14663396" as="font" type="font/woff2" crossorigin> 
+    <link rel="preload" href="lib/fonts/source-code-pro-v14-latin-regular.woff2" as="font" type="font/woff2" crossorigin> 
+    <link rel="preload" href="lib/fonts/roboto-mono-v13-latin-500.woff2" as="font" type="font/woff2" crossorigin> 
+    <link rel="preload" href="lib/fonts/source-sans-pro-v14-latin-700.woff2" as="font" type="font/woff2" crossorigin> 
+    <link rel="preload" href="lib/fonts/source-sans-pro-v14-latin-600.woff2" as="font" type="font/woff2" crossorigin> 
+    <link rel="preload" href="lib/fonts/freckle-face-v9-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="lib/w3schools31.css">
+    <link rel="stylesheet" href="lib/style.css">
+    <title>Full Stack Data Science</title>
+
+</head>
+
+<body style="position:relative;min-height:100%;font-family: 'Source Sans Pro', sans-serif;">
+    
+    <div style='display:none;position:absolute;z-index:6;top:122px;right:0;height:75px;padding-right:20px;padding-left:20px;padding-top:5px;'
+        id='googleSearch'>
+        <div class='gcse-search'></div>
+    </div>
+    
+    <div style='display:none;position:absolute;z-index:5;top:122px;right:0;height:75px;padding-right:15px;text-align:right;padding-top:5px;'
+        id='google_translate_element'>
+    </div>
+
+    <!-- MAIN -->
+    <div class="w3-main" id="main">
+
+        <div style="position:relative">
+            <div class="w3-right ws-black ext_icon_container">
+                <a class="icons-right w3-bar-item w3-button bar-icon-hover w3-right"
+                    style="width:52px;padding-top:11px;padding-bottom:13px;padding-left:11px;padding-right:12px"
+                    href="javascript:void(0)" onmouseover="mouseoverdarkicon()" onmouseout="mouseoutofdarkicon()"
+                    onclick='changepagetheme(2)'><i class='fa fa-adjust'></i></a>
+                <div id="darkmodemenu" onmouseover="mouseoverdarkicon()" onmouseout="mouseoutofdarkicon()">
+                    <input id="radio_darkpage" type="checkbox" name="radio_theme_mode" onclick="click_darkpage()"><label
+                        for="radio_darkpage"> Dark mode</label>
+                    <br>
+                    <input id="radio_darkcode" type="checkbox" name="radio_theme_mode" onclick="click_darkcode()"><label
+                        for="radio_darkcode"> Dark code</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="ws-black w3-center" style="padding-top:90px;padding-bottom:90px;">
+            <div class="w3-content learntocodecontent" style="max-width:1400px">
+                <h1 class="learntocodeh1">Learn Full Stack Data Science</h1><br><br><br>
+                <form class="example" action="/action_page.php" style="margin:auto;max-width:500px">
+                    <input type="text" placeholder="Search our tutorials, e.g. Python" id="search2" autocomplete="off"
+                        onkeydown="key_pressed_in_search(event)" oninput="find_search_results(this)"
+                        onfocus="find_search_results(this)">
+                    <button type="button" id="learntocode_searchbtn" onclick="click_learntocode_search_btn()"><i
+                            id="learntocode_searchicon" class="fa fa-search"></i></button>
+                    <div id="listofsearchresults">
+                    </div>
+                </form><br>
+            </div>
+        </div>
+
+        <svg style="background-color:#D9EEE1;" width="100%" height="70" viewbox="0 0 100 100"
+            preserveAspectRatio="none">
+            <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35" />
+        </svg>
+
+        <script>
+                (
+                    function setThemeMode() {
+                        var x = localStorage.getItem("preferredmode");
+                        var y = localStorage.getItem("preferredpagemode");
+                        if (x == "dark") {
+                            document.body.className += " darktheme";
+                            document.getElementById("radio_darkcode").checked = true;
+
+                        }
+                        if (y == "dark") {
+                            document.body.className += " darkpagetheme";
+                            document.getElementById("wavepath").style.fill = "rgb(13,23,33)";
+                            document.getElementById("radio_darkpage").checked = true;
+
+                        }
+                    })();
+        </script>
+
+        <div class="w3-row w3-padding-32 ws-light-green" style="margin-top:-10px;">
+            <div class="w3-content" style="max-width:1400px">
+
+                <div class="w3-col l6 w3-center" style="padding:3%;">
+                    <h1 style="font-size:100px;font-weight:700;margin-top:-18px!important;">Python</h1>
+                    <p style="font-size:19px;">A popular programming language for Data Science</p>
+                    <a href="#" class="w3-button tut-button" style="margin-bottom:2px;">Learn
+                        Python</a><br>
+                    <a href="#" class="w3-button w3-block ref-button black-color">Python Reference</a><br>
+                </div>
+
+                <div class="w3-col l6" style="padding:3%">
+                    <div class="w3-hide-small grey-color w3-card-2 w3-round" style="padding:16px;">
+                        <h3>Python Example:</h3>
+                        <div class="w3-code htmlHigh notranslate green-border" style="height:300px">
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html&gt;<br>
+                            &lt;title&gt;HTML Tutorial&lt;/title&gt;<br>
+                            &lt;body&gt;<br><br>
+                            &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                            &lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w3-row w3-padding-32 ws-turquoise">
+            <div class="w3-content" style="max-width:1400px">
+                <div class="w3-col l6 w3-center" style="padding:3%">
+                    <h1 style="font-weight:700">SQL</h1>
+                    <p style="font-size:19px">A language for accessing databases</p>
+                    <a href="#" class="w3-button w3-block tut-button">Learn SQL</a><br>
+                    <a href="#" class="w3-button ref-button black-color">SQL Reference</a><br>
+                </div>
+                <div class="w3-col l6" style="padding:3%">
+                    <div class="w3-hide-small w3-card-2 grey-color w3-round" style="padding:16px;">
+                        <h3>SQL Example:</h3>
+                        <div class="w3-code sqlHigh notranslate green-border" style="height:210px">
+                            SELECT * FROM Customers<br>
+                            WHERE Country='Mexico';
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-padding-32 ws-pink">
+            <div class="w3-content" style="max-width:1400px">
+                <div class="w3-col l6 w3-center" style="padding:3%">
+                    <h1 style="font-size:100px;font-weight:700">R</h1>
+                    <p style="font-size:19px;">R is often used for statistical computing and graphical presentation to
+                        analyze and visualize data.</p>
+                    <a href="#" class="w3-button w3-block tut-button">Learn R</a><br>
+                    <a href="#" class="w3-button w3-block ref-button black-color">R Reference</a><br>
+                </div>
+                <div class="w3-col l6" style="padding:3%">
+                    <div class="w3-hide-small grey-color w3-card-2 w3-round" style="padding:16px;">
+                        <h3>R Example:</h3>
+                        <div class="w3-code cssHigh notranslate green-border">
+                            body {<br>
+                            &nbsp; background-color: lightblue;<br>}<br><br>
+                            h1 {<br>
+                            &nbsp; color: white;<br>
+                            &nbsp; text-align: center;<br>}<br><br>p {<br>&nbsp; font-family: verdana;<br>}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-padding-64 w3-light-grey">
+
+            <h2 class="w3-center" style="font-size:36px;font-weight:500">Mathematics and Tools</h2>
+            <hr>
+            <div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;">
+                <a href="#" title="Statistics Tutorial">
+                    <div class="w3-card-2 w3-round w3-pale-green" style="padding:24px;">
+                        <h2 style="font-size:30px;font-weight:500">Statistics</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;">
+                <a href="#" title="Git & Github Tutorial">
+                    <div class="w3-card-2 w3-round w3-pale-blue" style="padding:24px">
+                        <h2 style="font-size:30px;font-weight:500">Git & Github</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;">
+                <a href="#" title="Excel & VBA Tutorial">
+                    <div class="w3-card-2 w3-round w3-pale-red" style="padding:24px">
+                        <h2 style="font-size:30px;font-weight:500">Excel & VBA</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;">
+                <a href="#" title="Power BI Tutorial">
+                    <div class="w3-card-2 w3-round w3-pale-yellow" style="padding:24px">
+                        <h2 style="font-size:30px;font-weight:500">Power BI</h2>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="w3-row w3-padding-64 ws-black">
+            <h2 class="w3-center" style="font-size:36px;font-weight:500">Python Libraries</h2>
+            <hr>
+            <div style="max-width:1400px;margin:auto">
+
+                <div class="w3-col l6 w3-center" style="padding:2% 3%;">
+                    <div class="w3-card-2 w3-round" style="color:black;background-color:#FFC0C7;padding:24px">
+                        <h2 style="font-size:45px;font-weight:700">NumPy</h2>
+                        <div style="height:70px;">
+                            <h5 class="w3-text-dark-grey">NumPy is the fundamental package for numerical computation in
+                                Python.</h5>
+                        </div>
+                        <a href="#" class="w3-button tut-button black-color w3-margin-bottom">Learn
+                            NumPy</a>
+                    </div>
+                </div>
+
+                <div class="w3-col l6 w3-center" style="padding:2% 3%;">
+                    <div class="w3-card-2 w3-round" style="background-color: #FFF4A3;color:black;padding:24px">
+                        <h2 style="font-size:45px;font-weight:700">Pandas</h2>
+                        <div style="height:70px;">
+                            <h5 class="w3-text-dark-grey">Pandas is heavily used for data analysis and cleaning. It
+                                provides fast, flexible data structures, such as dataframe.</h5>
+                        </div>
+                        <a href="#" class="w3-button tut-button black-color w3-margin-bottom">Learn
+                            Pandas</a>
+                    </div>
+                </div>
+
+                <div class="w3-col l6 w3-center" style="padding:2% 3%;">
+                    <div class="w3-card-2 w3-round" style="color:black;background-color:#F3ECEA;padding:24px">
+                        <h2 style="font-size:45px;font-weight:700">Matplotlib</h2>
+                        <div style="height:70px;">
+                            <h5 class="w3-text-dark-grey">Matplotlib has powerful yet beautiful visualizations. It's a
+                                plotting library for Python.</h5>
+                        </div>
+                        <a href="#" class="w3-button tut-button black-color w3-margin-bottom">Learn
+                            Matplotlib</a>
+                    </div>
+                </div>
+
+                <div class="w3-col l6 w3-center" style="padding:2% 3%;">
+                    <div class="w3-card-2 w3-round" style="color:black;background-color:#d3f0bc;padding:24px">
+                        <h2 style="font-size:45px;font-weight:700">Scikit-Learn</h2>
+                        <div style="height:70px;">
+                            <h5 class="w3-text-dark-grey">Scikit-learn is a machine learning library that provides
+                                almost all the machine learning algorithms you might need.</h5>
+                        </div>
+                        <a href="#" class="w3-button tut-button black-color w3-margin-bottom">Learn Scikit-Learn</a>
+                    </div>
+                </div>
+
+                <div class="w3-col l6 w3-center" style="padding:2% 3%;">
+                    <div class="w3-card-2 w3-round" style="color:black;background-color:#a0bcd8;padding:24px;">
+                        <h2 style="font-size:45px;font-weight:700">TensorFlow</h2>
+                        <div style="height:70px;">
+                            <h5 class="w3-text-dark-grey">TensorFlow helps you implement best practices for data
+                                automation, model tracking, performance monitoring, and model retraining.</h5>
+                        </div>
+                        <a href="#" class="w3-button tut-button black-color w3-margin-bottom">Learn TensorFlow</a>
+                    </div>
+                </div>
+
+                <div class="w3-col l6 w3-center" style="padding:2% 3%;">
+                    <div class="w3-card-2 w3-round" style="color:black;background-color:#86eecf;padding:24px">
+                        <h2 style="font-size:45px;font-weight:700">PyTorch</h2>
+                        <div style="height:70px;">
+                            <h5 class="w3-text-dark-grey">PyTorch is a Python-based scientific computing package that
+                                uses the power of graphics processing units.</h5>
+                        </div>
+                        <a href="#" class="w3-button tut-button black-color w3-margin-bottom">Learn PyTorch</a>
+                    </div>
+                </div>
+
+                <div class="w3-col l6 w3-center" style="padding:2% 3%;">
+                    <div class="w3-card-2 w3-round" style="color:black;background-color:#d492d6;padding:24px;">
+                        <h2 style="font-size:45px;font-weight:700">BeautifulSoup</h2>
+                        <div style="height:70px;">
+                            <h5 class="w3-text-dark-grey">BeautifulSoup is another popular python library most commonly
+                                known for web crawling and data scraping.</h5>
+                        </div>
+                        <a href="#" class="w3-button tut-button black-color w3-margin-bottom">Learn BeautifulSoup</a>
+                    </div>
+                </div>
+
+                <div class="w3-col l6 w3-center" style="padding:2% 3%;">
+                    <div class="w3-card-2 w3-round" style="color:black;background-color:#d7b4ff;padding:24px">
+                        <h2 style="font-size:45px;font-weight:700">Keras</h2>
+                        <div style="height:70px;">
+                            <h5 class="w3-text-dark-grey">Similar to TensorFlow, Keras is another popular library that
+                                is used extensively for deep learning and neural network modules.</h5>
+                        </div>
+                        <a href="#" class="w3-button tut-button black-color w3-margin-bottom">Learn Keras</a>
+                    </div>
+                </div>
+
+                <div class="w3-col l6 w3-center" style="padding:2% 3%;">
+                    <div class="w3-card-2 w3-round" style="color:black;background-color:#f4f7e1;padding:24px;">
+                        <h2 style="font-size:45px;font-weight:700">SciPy</h2>
+                        <div style="height:70px;">
+                            <h5 class="w3-text-dark-grey">SciPy is Python library for data science that is extensively
+                                used for high-level computations</h5>
+                        </div>
+                        <a href="#" class="w3-button tut-button black-color w3-margin-bottom">Learn SciPy</a>
+                    </div>
+                </div>
+
+                <div class="w3-col l6 w3-center" style="padding:2% 3%;">
+                    <div class="w3-card-2 w3-round" style="color:black;background-color:#fdd1ac;padding:24px">
+                        <h2 style="font-size:45px;font-weight:700">PyBrain</h2>
+                        <div style="height:70px;">
+                            <h5 class="w3-text-dark-grey">PyBrain is a Python library for building and training neural
+                                networks.</h5>
+                        </div>
+                        <a href="#" class="w3-button tut-button black-color w3-margin-bottom">Learn PyBrain</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w3-row w3-padding-64 ws-light-green">
+
+            <div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;">
+                <a href="#" title="C++ Tutorial">
+                    <div class="w3-card-2 w3-round w3-pale-blue" style="padding:24px;">
+                        <h2 style="font-size:30px;font-weight:500">C++</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;">
+                <a href="#" title="Javascript Tutorial">
+                    <div class="w3-card-2 w3-round w3-light-grey" style="padding:24px">
+                        <h2 style="font-size:30px;font-weight:500">Javascript</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;">
+                <a href="#" title="Excel & VBA Tutorial">
+                    <div class="w3-card-2 w3-round w3-pale-red" style="padding:24px">
+                        <h2 style="font-size:30px;font-weight:500">Django</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;">
+                <a href="#" title="Power BI Tutorial">
+                    <div class="w3-card-2 w3-round w3-pale-yellow" style="padding:24px">
+                        <h2 style="font-size:30px;font-weight:500">AWS</h2>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <footer class="w3-container w3-center w3-padding-32 ws-black">
+            <h3>Made in India by ❤️</h3>
+        </footer>
+
+    </div>
+    <!-- END MAIN -->
+
+    <script src="https://cdn.snigelweb.com/adengine/w3schools.com/loader.js"></script>
+    <script src="/lib/script.js"></script>
+    <script src="/lib/uic.js?v=1.0.5"></script>
+
+</body>
+
+</html>
